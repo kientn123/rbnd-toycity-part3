@@ -1,0 +1,11 @@
+1. How long did you spend working on this project?
+  2 hours
+2. What was the most rewarding challenge you conquered?
+  I got to practice some functional programming style with select function of Array.
+3. What two additional features did you build? Why?
+  I added find_by_customer and find_by_product to the Transaction class.
+  They will help people find all the transactions purchased by a customer and
+  all the transactions related to a specific product.
+4. Where do you still have room to grow?
+  There are plenty of room to grow. For example, two customers can purchase a
+  product together. A discount can be added to a transaction.
