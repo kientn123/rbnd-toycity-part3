@@ -10,7 +10,7 @@ class Customer
 
   def add_to_customers
     @@customers.each do |customer|
-      return DuplicateCustomerError.new("#{@name} already exists") if customer.name == @name
+      raise DuplicateCustomerError.new("#{@name} already exists") if customer.name == @name
     end
     @@customers << self
   end

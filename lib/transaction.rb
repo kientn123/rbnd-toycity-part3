@@ -11,7 +11,7 @@ class Transaction
 
   def add_to_transactions
     if !@product.in_stock?
-      return OutOfStockError.new("#{@product.title} is out of stock.")
+      raise OutOfStockError.new("#{@product.title} is out of stock.")
     end
     @@transactions << self
     @id = @@transactions.length
